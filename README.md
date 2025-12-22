@@ -1,27 +1,42 @@
-A full Morse code encoder/decoder implemented in Haskell, demonstrating functional programming techniques, recursion, pattern matching, data structures, and parsing.
+# Morse Code Encoding and Parsing in Haskell
 
-This project includes:
+This repository contains my solution to **Assignment 2**, which focuses on functional programming techniques in **Haskell**, including recursion, algebraic data types, and tree-based representations.
 
-### 🔹 Morse Code Encoding
-- Converting characters to Morse code using a lookup table
-- Encoding entire words and sentences
-- Handling spacing rules (short gaps between letters, medium gaps between words)
-- Working generically with any encoding table
+## Overview
 
-### 🔹 Morse Code Decoding
-- Decoding Morse code back into text using a lookup table
-- Splitting Morse sequences based on timing gaps
-- Ensuring decodeText t (encodeText t s) = s
+The assignment explores multiple representations and transformations of Morse code, as well as recursive parsing of structured input. The completed tasks include:
 
-### 🔹 Tree-Based Decoding
-- Building a binary Morse tree where left = dit and right = dah
-- Traversing the tree to decode Morse without lookup tables
-- Converting between tables and tree structures (ramify + tabulate)
+- Encoding text into Morse code using lookup tables
+- Decoding Morse code back into text
+- Tree-based decoding using a binary Morse tree
+- Converting between table and tree representations
+- Implementing a recursive parser for well-bracketed strings
 
-### 🔹 Well-Bracketed String Parser
-- A recursive parser for validating and reconstructing nested bracket structures
-- Supports `()` and `{}` with arbitrary nesting
-- Returns `Nothing` for invalid bracket strings
-- Demonstrates recursive descent parsing in Haskell
+All implementations follow the provided assignment template and required type signatures.
 
-This was originally a functional programming assignment, now turned into a clean, structured Haskell project showcasing encoding/decoding, recursion, algebraic data types, and tree manipulation.
+## Repository Structure
+
+- `Assignment2.hs`  
+  Main solution file containing all completed exercises.
+
+- `Types.hs`  
+  Preset data types and helper definitions provided for the assignment.
+
+- `DETAILS.md`  
+  The original assignment specification describing the exercises that were completed.
+
+- `presubmit.sh`  
+  Script used to verify compilation and submission readiness.
+
+- `morse_tree.jpg`  
+  Diagram illustrating the binary Morse code tree structure.
+
+- `.gitignore`  
+  Git ignore rules for Haskell build artifacts.
+
+## Notes
+
+This repository is intended for **educational purposes** and reflects coursework completed as part of a university functional programming module.
+
+---
+
